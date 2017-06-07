@@ -1,5 +1,5 @@
 # PalindromeApplication
-A simple application to calculate largest palindrome number between two numbers.
+A simple application to calculate largest palindrome number between two numbers obtained as input from the user.
 
 A JavaFx project with UI designed using the Javafx scene builder.
 
