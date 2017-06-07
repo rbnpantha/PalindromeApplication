@@ -39,12 +39,10 @@ public class PalindromeController {
     PalindromeService palindromeService = new PalindromeServiceImpl();
 
     public void search(ActionEvent event) throws Exception {
-        int lowerBound = Integer.parseInt(lower.getText());
-        int upperBound = Integer.parseInt(higher.getText());
-        try {
 
-            //int lowerBound = Integer.parseInt(lower.getText());
-            //int upperBound = Integer.parseInt(higher.getText());
+        try {
+            int lowerBound = Integer.parseInt(lower.getText());
+            int upperBound = Integer.parseInt(higher.getText());
             System.out.println(Integer.parseInt(lower.getText()));
             if (lowerBound <= upperBound) {
                 error.setText("");
@@ -59,7 +57,7 @@ public class PalindromeController {
                 result.setText("");
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            error.setText("Please enter a valid range !");
         }
     }
 
