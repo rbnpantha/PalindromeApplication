@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PalindromeApplication">
+    <output-path>D:/Javafx_Jars</output-path>
+    <root id="root">
+      <element id="archive" name="PalindromeApplication.jar">
+        <element id="module-output" name="PalindromeApplication" />
+      </element>
+    </root>
+  </artifact>
+</component>
