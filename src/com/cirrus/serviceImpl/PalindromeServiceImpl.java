@@ -29,7 +29,7 @@ public class PalindromeServiceImpl implements PalindromeService {
 
     @Override
     public int findPalindrome(int higher, int lower) {
-        for (int num = higher; lower >= lower; num--) {
+        for (int num = higher; num >= lower; num--) {
             if (checkPalindrome(num)) {
                 return num;
             }

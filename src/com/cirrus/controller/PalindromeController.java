@@ -58,6 +58,7 @@ public class PalindromeController {
             }
         } catch (Exception e) {
             error.setText("Please enter a valid range !");
+            result.setText("");
         }
     }
 

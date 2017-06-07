@@ -1,6 +1,16 @@
 <component name="ArtifactManager">
-  <artifact type="javafx" name="PalindromeApplication">
-    <output-path>D:/Javafx_Jars</output-path>
+  <artifact type="javafx" build-on-make="true" name="PalindromeApplication">
+    <output-path>D:/Javafx_Jars/Palindrome</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.cirrus.application.Main" />
+        <option name="description" value="A simple application to calculate largest palindrome number between two numbers.&#13;&#10;&#13;&#10;A JavaFx project with UI designed using the Javafx scene builder.&#13;&#10;&#13;&#10;How to use this system !&#13;&#10;&#13;&#10;Start the applicaiton.&#13;&#10;&#13;&#10;Write the upper and lower bound of digit in the text box.&#13;&#10;&#13;&#10;Hit the search button!&#13;&#10;&#13;&#10;If these are the valid number then the system calculates the largest Palindrome and display it otherwise error message is shown.&#13;&#10;&#13;&#10;Thank you for using the system! Any comments or complements regarding it is always appreciated!" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="PalindromeApplication" />
+        <option name="vendor" value="Rabin" />
+      </options>
+    </properties>
     <root id="root">
       <element id="archive" name="PalindromeApplication.jar">
         <element id="module-output" name="PalindromeApplication" />

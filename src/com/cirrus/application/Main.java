@@ -23,7 +23,7 @@ public class Main extends Application {
             root = FXMLLoader.load(getClass().getResource("../view/palindrome.fxml"));
             scene = new Scene(root);
             scene.getStylesheets().add("custom.css");
-            primaryStage.setTitle("Palindrome");
+            primaryStage.setTitle("Palindrome Application");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
