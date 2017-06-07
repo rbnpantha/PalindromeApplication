@@ -1,5 +1,7 @@
 package com.cirrus.controller;
 
+import com.cirrus.service.PalindromeService;
+import com.cirrus.serviceImpl.PalindromeServiceImpl;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -34,7 +36,29 @@ public class PalindromeController {
     @FXML
     private Label error;
 
+    PalindromeService palindromeService = new PalindromeServiceImpl();
+
     public void search(ActionEvent event) throws Exception {
+        try {
+
+            int lowerBound = Integer.parseInt(lower.getText());
+            int upperBound = Integer.parseInt(higher.getText());
+            System.out.println(Integer.parseInt(lower.getText()));
+            if (lowerBound <= upperBound) {
+                error.setText("");
+                int palindrome = palindromeService.findPalindrome(upperBound, lowerBound);
+                if (palindrome == -1) {
+                    result.setText("There is no palindrome in this range !");
+                } else {
+                    result.setText("The largest palindrome is " + palindrome);
+                }
+            } else {
+                error.setText("Please enter a valid range!");
+                result.setText("");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 
